@@ -19,6 +19,9 @@ public class Publisher {
     @JoinColumn(name = "publisher_id")
     private Set<Book> books = new HashSet<>();
 
+    public Publisher() {
+    }
+
     public Publisher(String name, String address) {
         this.name = name;
         this.address = address;

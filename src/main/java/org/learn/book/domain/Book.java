@@ -23,6 +23,9 @@ public class Book {
     @ManyToOne
     private Publisher publisher;
 
+    public Book() {
+    }
+
     public Book(String title, String isbn) {
         this.title = title;
         this.isbn = isbn;
